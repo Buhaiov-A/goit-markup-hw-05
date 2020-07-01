@@ -52,8 +52,7 @@ a {
   box-sizing: border-box;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
+  /* border: 1px solid #eeeeee; */
 }
 
 .card-box:hover {
@@ -74,9 +73,10 @@ a {
   margin-bottom: 0;
 }
 
-.card-link {
+/* .card-link {
   display: block;
-}
+  box-sizing: border-box;
+} */
 
 .card-thumb {
   position: relative;
@@ -116,6 +116,9 @@ a {
   bottom: 0;
   left: 0;
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .cards.title,
@@ -125,14 +128,16 @@ a {
 
 .cards .text {
   position: absolute;
-
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
   top: 0;
   left: 0;
   margin: 0;
   color: var(--white-color);
   font-size: 18px;
   line-height: 1.55;
-
   opacity: 0;
   display: flex;
   transition: 250ms;
